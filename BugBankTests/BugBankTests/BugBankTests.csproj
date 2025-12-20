@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Gauge.CSharp.Lib" Version="0.12.*" />
+    <PackageReference Include="WebDriverManager" Version="2.17.6" />
   </ItemGroup>
 
 </Project>
