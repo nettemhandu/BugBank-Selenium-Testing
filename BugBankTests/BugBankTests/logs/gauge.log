@@ -1,0 +1,18 @@
+20-12-2025 19:19:36.405 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+20-12-2025 19:19:36.408 [Gauge] [DEBUG] Plugin html-report is already installed.
+20-12-2025 19:19:36.410 [Gauge] [DEBUG] Plugin dotnet is already installed.
+20-12-2025 19:19:36.411 [Gauge] [DEBUG] Parsing started.
+20-12-2025 19:19:36.412 [Gauge] [DEBUG] Started concepts parsing.
+20-12-2025 19:19:36.413 [Gauge] [ERROR] No such file or directory: /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/specs
+20-12-2025 19:19:50.775 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+20-12-2025 19:19:50.779 [Gauge] [DEBUG] Plugin dotnet is already installed.
+20-12-2025 19:19:50.782 [Gauge] [DEBUG] Plugin html-report is already installed.
+20-12-2025 19:19:50.785 [Gauge] [DEBUG] Parsing started.
+20-12-2025 19:19:50.785 [Gauge] [DEBUG] Started concepts parsing.
+20-12-2025 19:19:50.786 [Gauge] [ERROR] No such file or directory: /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/specs
+20-12-2025 19:20:27.165 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+20-12-2025 19:20:27.167 [Gauge] [DEBUG] Plugin dotnet is already installed.
+20-12-2025 19:20:27.168 [Gauge] [DEBUG] Plugin html-report is already installed.
+20-12-2025 19:20:27.170 [Gauge] [DEBUG] Parsing started.
+20-12-2025 19:20:27.170 [Gauge] [DEBUG] Started concepts parsing.
+20-12-2025 19:20:27.173 [Gauge] [ERROR] No such file or directory: /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/specs

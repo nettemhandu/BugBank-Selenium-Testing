@@ -1,0 +1,4 @@
+{
+  "Language": "dotnet",
+  "Plugins": ["html-report"]
+}
