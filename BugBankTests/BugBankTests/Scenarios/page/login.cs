@@ -6,7 +6,7 @@ namespace Pages
 {
     public class LoginPage
     {
-        private const string URL = "https://bugbank.netlify.app/?utm_source=chatgpt.com";
+        private const string Url = "https://bugbank.netlify.app/?utm_source=chatgpt.com";
         private static readonly IWebDriver Driver = DriverFactory.Driver;
 
         private static IWebElement EnterEmail => Driver.FindElement(By.Name("email"));
@@ -24,7 +24,9 @@ namespace Pages
 
         public LoginPage Open()
         {
-            Driver.Navigate
+            Driver.Navigate().GoToUrl(Url);
+            Driver.Title.Should().Be("BugBank | The bank with bugs and glitches, your way.");
+            return this;
         }
     }
 }
