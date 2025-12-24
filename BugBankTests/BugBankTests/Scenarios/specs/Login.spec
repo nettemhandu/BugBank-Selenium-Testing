@@ -1,9 +1,9 @@
-# BugBank Sign Up
+# BugBank Login
 
-This plan tests the user journey to sign up on the BugBank website
+This plan tests the user journey to login on the BugBank App
 
-## Sign up for BugBank
+## Login to BugBank App
 
 * Open Bugbank Homepage
-* Navigate Register to sign up for new account
-* Sign up with "antomhandu@gmail.com", "Antonette", "19990909" and "confirm password"
+* Login with "antomhandu@gmail.com" and "19990909"
+*
