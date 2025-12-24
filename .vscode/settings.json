@@ -1,3 +1,7 @@
 {
-  "dotnet.defaultSolution": "BugBankTests/BugBankTests/BugBankTests.sln"
+  "dotnet.defaultSolution": "BugBankTests/BugBankTests/BugBankTests.sln",
+  "files.associations": {
+    "*.spec": "gauge",
+    "*.cpt": "gauge"
+  }
 }
