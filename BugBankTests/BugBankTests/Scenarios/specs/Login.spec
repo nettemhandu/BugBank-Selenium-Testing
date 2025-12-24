@@ -1,3 +1,5 @@
-# BugBank Login
+# BugBank Sign Up
 
-This plan tests the user journey to login the BugBank website
+This plan tests the user journey to sign up on the BugBank website
+
+## 
