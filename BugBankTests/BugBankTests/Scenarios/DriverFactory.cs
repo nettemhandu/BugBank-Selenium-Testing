@@ -7,7 +7,8 @@ namespace Steps
 {
     public class DriverFactory
     {
-        public static IWebDriver Driver {get; private set;}
+        public static IWebDriver? Driver { get; private set; }
+
 
         [BeforeSuite]
         public void Setup()

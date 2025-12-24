@@ -1,7 +1,11 @@
 using FluentAssertions;
-using Gauge.CSharp.Lib.Attribute;
 using OpenQA.Selenium;
+using Gauge.CSharp.Lib.Attribute;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using System;
 using Steps;
+
 
 namespace Pages
 {
@@ -10,18 +14,25 @@ namespace Pages
         private const string Url = "https://bugbank.netlify.app/?utm_source=chatgpt.com";
         private static readonly IWebDriver Driver = DriverFactory.Driver;
 
-        private static IWebElement EnterEmail => Driver.FindElement(By.Name("email"));
-        private static IWebElement EnterPassword => Driver.FindElement(By.Name("password"));
+        private static IWebElement EnterEmail =>
+        Driver.FindElement(By.Name("email"));
+        private static IWebElement EnterPassword =>
+        Driver.FindElement(By.Name("password"));
 
-        private static IWebElement AccessButton => Driver.FindElement(By.XPath("//button[normalize-space()='Access']"));
+        private static IWebElement AccessButton =>
+        Driver.FindElement(By.XPath("//button[normalize-space()='Access']"));
 
-        private static IWebElement RegisterButton => Driver.FindElement(By.Text("Register"));
+        private static IWebElement RegisterButton =>
+        Driver.FindElement(By.XPath("//button[normalize-space()='Register']"));
 
-        private static IWebElement EnterName => Driver.FindElement(By.Name("name"));
+        private static IWebElement EnterName =>
+        Driver.FindElement(By.Name("name"));
 
-        private static IWebElement ConfirmPassword => Driver.FindElement(By.Name("passwordConfirmation"));
+        private static IWebElement ConfirmPassword =>
+        Driver.FindElement(By.Name("passwordConfirmation"));
 
-        private static IWebElement CreateAccWithBalance => Driver.FindElement(By.Id("toggleAddBalance"));
+        private static IWebElement CreateAccWithBalance =>
+        Driver.FindElement(By.Id("toggleAddBalance"));
 
         public LoginPage Open()
         {
@@ -42,10 +53,18 @@ namespace Pages
 
         public void ClickCreateAccWithBalance()
         {
-            WebDriverWait wait = new WebDriverWait(Driver, TimesSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(CreateAccWithBalance));
 
             CreateAccWithBalance.Click();
+        }
+
+        public void ClickRegisterButton()
+        {
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(RegisterButton));
+
+            RegisterButton.Click();
         }
     }
 }
