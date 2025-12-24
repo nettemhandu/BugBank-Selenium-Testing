@@ -1,5 +1,5 @@
 using FluentAssertions;
-using Gauge.Csharp.Lib.Attribute;
+using Gauge.CSharp.Lib.Attribute;
 using OpenQA.Selenium;
 using Steps;
 
@@ -13,7 +13,7 @@ namespace Pages
         private static IWebElement EnterEmail => Driver.FindElement(By.Name("email"));
         private static IWebElement EnterPassword => Driver.FindElement(By.Name("password"));
 
-        private static IWebElement AccessButton => Driver.FindElement(By.Text("Access"));
+        private static IWebElement AccessButton => Driver.FindElement(By.XPath("//button[normalize-space()='Access']"));
 
         private static IWebElement RegisterButton => Driver.FindElement(By.Text("Register"));
 
@@ -28,6 +28,16 @@ namespace Pages
             Driver.Navigate().GoToUrl(Url);
             Driver.Title.Should().Be("BugBank | The bank with bugs and glitches, your way.");
             return this;
+        }
+
+        public void ClickAccessButton()
+        {
+            // Wait until button is clickable (good practice)
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(AccessButton));
+
+            // Click the button
+            AccessButton.Click();
         }
     }
 }

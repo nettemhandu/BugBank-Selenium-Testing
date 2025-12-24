@@ -1,5 +1,5 @@
 // using Gauge.Csharp.Lib;
-using Gauge.Csharp.Lib.Attribute;
+using Gauge.CSharp.Lib.Attribute;
 using Pages;
 
 namespace Steps
