@@ -5,5 +5,10 @@ This plan tests the user journey to sign up on the BugBank website
 ## Sign up for BugBank
 
 * Open Bugbank Homepage
-* Navigate Register to sign up for new account
-* Sign up with "antomhandu@gmail.com", "Antonette", "19990909" and "confirm password"
+* Click "Register" to sign up for new account
+* Enter Email "antomhandu@gmail.com"
+* Enter Name "Antonette"
+* Enter Password "19990909"
+* Confirm Password "19990909"
+* Click "Create acc with a balance"
+* Click Register button

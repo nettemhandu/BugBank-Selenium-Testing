@@ -39,5 +39,13 @@ namespace Pages
             // Click the button
             AccessButton.Click();
         }
+
+        public void ClickCreateAccWithBalance()
+        {
+            WebDriverWait wait = new WebDriverWait(Driver, TimesSpan.FromSeconds(10));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(CreateAccWithBalance));
+
+            CreateAccWithBalance.Click();
+        }
     }
 }
