@@ -9,6 +9,17 @@ namespace Steps
         private readonly LoginPage _loginPage = new LoginPage();
 
         [Step("Open Bugbank Homepage")]
-        public void OpenBugBank() => _loginPage.Open();
+        public void OpenBugBank()
+        {
+            _loginPage.Open();
+        }
+
+        [Step("Click Register to sign up for new account")]
+        public void Register()
+        {
+            _loginPage.ClickRegisterButton();
+        }
+    
+        [Step("Enter Email antomhandu@gmail.com")]
     }
 }
