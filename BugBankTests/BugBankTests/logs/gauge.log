@@ -1343,3 +1343,359 @@ Total time taken: 4.263s
 25-12-2025 15:26:09.684 [Gauge] [INFO] 
 Total time taken: 9.12s
 25-12-2025 15:26:09.685 [Gauge] [INFO] Updates are available. Run `gauge update -c` for more info.
+25-12-2025 15:35:13.186 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+25-12-2025 15:35:13.189 [Gauge] [DEBUG] Plugin dotnet is already installed.
+25-12-2025 15:35:13.191 [Gauge] [DEBUG] Plugin screenshot is already installed.
+25-12-2025 15:35:13.191 [Gauge] [DEBUG] Parsing started.
+25-12-2025 15:35:13.191 [Gauge] [DEBUG] Started concepts parsing.
+25-12-2025 15:35:13.195 [Gauge] [DEBUG] 0 concepts parsing completed.
+25-12-2025 15:35:13.196 [Gauge] [DEBUG] Started specifications parsing.
+25-12-2025 15:35:13.197 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/Login.spec:1 Spec heading not found => ''
+25-12-2025 15:35:13.198 [Gauge] [WARNING] [ParseWarning] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:21 Multiple data table present, ignoring table
+25-12-2025 15:35:13.198 [Gauge] [DEBUG] 2 specifications parsing completed.
+25-12-2025 15:35:13.198 [Gauge] [DEBUG] Parsing completed.
+25-12-2025 15:35:14.195 [Gauge] [DEBUG] Checking updates...
+25-12-2025 15:35:14.195 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/dotnet?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:35:14.815 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:35:14.993 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/screenshot?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:35:21.312 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/page/LoginPage.cs(15,53): warning CS8601: Possible null reference assignment. [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:35:21.712 [dotnet] [DEBUG] Loading assembly from : /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin/BugBankTests.dll
+25-12-2025 15:35:22.054 [dotnet] [DEBUG] Try load Gauge.CSharp.Lib in GaugeLoadContext
+25-12-2025 15:35:22.075 [dotnet] [DEBUG] Try load BugBankTests in GaugeLoadContext
+25-12-2025 15:35:22.083 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:35:22.083 [dotnet] [DEBUG] Try load WebDriver in GaugeLoadContext
+25-12-2025 15:35:22.087 [dotnet] [DEBUG] Try load FluentAssertions in GaugeLoadContext
+25-12-2025 15:35:22.088 [dotnet] [DEBUG] Try load SeleniumExtras.WaitHelpers in GaugeLoadContext
+25-12-2025 15:35:22.088 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:35:22.091 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:35:22.093 [dotnet] [DEBUG] Number of AssembliesReferencingGaugeLib : 1
+25-12-2025 15:35:22.095 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:35:22.096 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:35:22.097 [dotnet] [DEBUG] Building StepRegistry...
+25-12-2025 15:35:22.099 [dotnet] [DEBUG] 3 Step implementations found. Adding to registry...
+25-12-2025 15:35:22.102 [dotnet] [DEBUG] 'Open Bugbank Homepage': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:35:22.104 [dotnet] [DEBUG] 'Click Register to sign up for new account': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:35:22.104 [dotnet] [DEBUG] 'Enter Email {}': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:35:22.104 [dotnet] [DEBUG] Building StepRegistry...
+25-12-2025 15:35:22.104 [dotnet] [DEBUG] 3 Step implementations found. Adding to registry...
+25-12-2025 15:35:22.104 [dotnet] [DEBUG] 'Open Bugbank Homepage': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:35:22.104 [dotnet] [DEBUG] 'Click Register to sign up for new account': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:35:22.104 [dotnet] [DEBUG] 'Enter Email {}': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:35:22.193 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60077
+25-12-2025 15:35:22.193 [Gauge] [DEBUG] Successfully made the connection with runner with port: 60077
+25-12-2025 15:35:22.193 [Gauge] [DEBUG] Validation started.
+25-12-2025 15:35:22.439 [Gauge] [DEBUG] Validation completed.
+25-12-2025 15:35:22.440 [Gauge] [DEBUG] Run started
+25-12-2025 15:35:22.440 [Gauge] [DEBUG] Initialising suite data store.
+25-12-2025 15:35:22.452 [dotnet] [DEBUG] Try load System.Collections.Concurrent in GaugeLoadContext
+25-12-2025 15:35:22.478 [dotnet] [DEBUG] Loaded Instance Manager of Type: Gauge.CSharp.Lib.DefaultClassInstanceManager
+25-12-2025 15:35:22.556 [dotnet] [DEBUG] Calling InvokeMethod to call method Void Setup()
+25-12-2025 15:35:22.557 [dotnet] [DEBUG] Try load System.Threading in GaugeLoadContext
+25-12-2025 15:35:22.558 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:35:22.559 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:35:22.559 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:35:22.563 [dotnet] [DEBUG] Try load System.Net.Sockets in GaugeLoadContext
+25-12-2025 15:35:22.563 [dotnet] [DEBUG] Try load System.Net.Primitives in GaugeLoadContext
+25-12-2025 15:35:22.571 [dotnet] [DEBUG] Try load System.Threading in GaugeLoadContext
+25-12-2025 15:35:22.571 [dotnet] [DEBUG] Try load System.Console in GaugeLoadContext
+25-12-2025 15:35:22.572 [dotnet] [DEBUG] Try load System.Collections.Concurrent in GaugeLoadContext
+25-12-2025 15:35:22.575 [dotnet] [DEBUG] Try load System.Diagnostics.Process in GaugeLoadContext
+25-12-2025 15:35:22.575 [dotnet] [DEBUG] Try load System.Text.Json in GaugeLoadContext
+25-12-2025 15:35:22.577 [dotnet] [DEBUG] Try load System.Linq in GaugeLoadContext
+25-12-2025 15:35:24.328 [dotnet] [DEBUG] Try load System.Text.Encodings.Web in GaugeLoadContext
+25-12-2025 15:35:24.346 [dotnet] [DEBUG] Try load System.Net.Http in GaugeLoadContext
+25-12-2025 15:35:27.683 [Gauge] [INFO] # BugBank Sign Up
+25-12-2025 15:35:27.705 [Gauge] [INFO] ## Sign up for BugBank
+25-12-2025 15:35:27.726 [Gauge] [DEBUG] * Open Bugbank Homepage
+25-12-2025 15:35:27.769 [dotnet] [DEBUG] Calling InvokeMethod to call method Void OpenBugBank()
+25-12-2025 15:35:27.771 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:35:29.539 [dotnet] [DEBUG] Try load System.Threading.Thread in GaugeLoadContext
+25-12-2025 15:35:30.576 [dotnet] [DEBUG] Try load System.Threading in GaugeLoadContext
+25-12-2025 15:35:30.576 [dotnet] [DEBUG] Try load System.Console in GaugeLoadContext
+25-12-2025 15:35:30.576 [dotnet] [DEBUG] Try load System.Diagnostics.TraceSource in GaugeLoadContext
+25-12-2025 15:35:30.577 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:35:30.579 [dotnet] [DEBUG] Try load System.Collections.Concurrent in GaugeLoadContext
+25-12-2025 15:35:30.581 [dotnet] [DEBUG] Try load System.Xml.XDocument in GaugeLoadContext
+25-12-2025 15:35:30.583 [dotnet] [DEBUG] Try load System.Linq in GaugeLoadContext
+25-12-2025 15:35:30.587 [dotnet] [INFO] Warning:
+25-12-2025 15:35:30.587 [dotnet] [INFO] The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and
+25-12-2025 15:35:30.587 [dotnet] [INFO] the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for
+25-12-2025 15:35:30.587 [dotnet] [INFO] non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.
+25-12-2025 15:35:30.587 [dotnet] [INFO] Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.
+25-12-2025 15:35:30.587 [dotnet] [INFO] A paid commercial license supports the development and continued increasing support of
+25-12-2025 15:35:30.587 [dotnet] [INFO] Fluent Assertions users under both commercial and community licenses. Help us
+25-12-2025 15:35:30.587 [dotnet] [INFO] keep Fluent Assertions at the forefront of unit testing.
+25-12-2025 15:35:30.587 [dotnet] [INFO] For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/
+25-12-2025 15:35:30.613 [Gauge] [DEBUG] * Click Register to sign up for new account
+
+25-12-2025 15:35:30.620 [dotnet] [DEBUG] Calling InvokeMethod to call method Void Register()
+25-12-2025 15:35:30.620 [dotnet] [DEBUG] Try load netstandard in GaugeLoadContext
+25-12-2025 15:35:30.846 [dotnet] [DEBUG] Calling InvokeMethod to call method Void TearDown()
+25-12-2025 15:35:30.993 [dotnet] [DEBUG] Try load System.ComponentModel.Primitives in GaugeLoadContext
+25-12-2025 15:35:31.073 [dotnet] [DEBUG] KillProcessrequest received
+25-12-2025 15:35:31.075 [Gauge] [INFO] Specifications:	2 executed	1 passed	1 failed	0 skipped
+25-12-2025 15:35:31.076 [Gauge] [INFO] Scenarios:	1 executed	1 passed	0 failed	0 skipped
+25-12-2025 15:35:31.076 [Gauge] [INFO] 
+Total time taken: 8.627s
+25-12-2025 15:35:31.076 [Gauge] [INFO] Updates are available. Run `gauge update -c` for more info.
+25-12-2025 15:36:19.935 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+25-12-2025 15:36:19.937 [Gauge] [DEBUG] Plugin dotnet is already installed.
+25-12-2025 15:36:19.937 [Gauge] [DEBUG] Plugin screenshot is already installed.
+25-12-2025 15:36:19.938 [Gauge] [DEBUG] Parsing started.
+25-12-2025 15:36:19.938 [Gauge] [DEBUG] Started concepts parsing.
+25-12-2025 15:36:19.939 [Gauge] [DEBUG] 0 concepts parsing completed.
+25-12-2025 15:36:19.939 [Gauge] [DEBUG] Started specifications parsing.
+25-12-2025 15:36:19.941 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/Login.spec:1 Spec heading not found => ''
+25-12-2025 15:36:19.941 [Gauge] [WARNING] [ParseWarning] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:21 Multiple data table present, ignoring table
+25-12-2025 15:36:19.941 [Gauge] [DEBUG] 2 specifications parsing completed.
+25-12-2025 15:36:19.941 [Gauge] [DEBUG] Parsing completed.
+25-12-2025 15:36:22.951 [Gauge] [DEBUG] Checking updates...
+25-12-2025 15:36:22.952 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/dotnet?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:36:23.386 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/page/LoginPage.cs(44,27): error CS1061: 'string' does not contain a definition for 'Should' and no accessible extension method 'Should' accepting a first argument of type 'string' could be found (are you missing a using directive or an assembly reference?) [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:36:23.386 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/page/LoginPage.cs(15,53): warning CS8601: Possible null reference assignment. [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:36:23.532 [dotnet] [INFO] { "logLevel": "fatal", "message": "Unable to build Project in /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests\ndotnet Project build failed.
+25-12-2025 15:36:23.532 [dotnet] [INFO] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'\n   at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59"}
+25-12-2025 15:36:23.533 [dotnet] [ERROR] Unhandled exception.
+25-12-2025 15:36:23.540 [dotnet] [ERROR] System.Exception: dotnet Project build failed.
+25-12-2025 15:36:23.540 [dotnet] [ERROR] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'
+25-12-2025 15:36:23.540 [dotnet] [ERROR] at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59
+25-12-2025 15:36:23.540 [dotnet] [ERROR] at Gauge.Dotnet.Program.Main(String[] args) in /home/runner/work/gauge-dotnet/gauge-dotnet/src/Program.cs:line 47
+25-12-2025 15:36:23.540 [dotnet] [ERROR] at Gauge.Dotnet.Program.<Main>(String[] args)
+25-12-2025 15:36:23.568 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:36:23.668 [dotnet] [ERROR] launcher.sh: line 5: 19342 Abort trap: 6           dotnet bin/net9.0/Gauge.Dotnet.dll $@
+25-12-2025 15:36:23.669 [Gauge] [ERROR] Error occurred while waiting for runner process to finish.
+Error : exit status 134
+25-12-2025 15:36:23.669 [Gauge] [CRITICAL] Failed to start gauge API: Error occurred while waiting for runner process to finish.
+Error : exit status 134
+25-12-2025 15:36:45.048 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+25-12-2025 15:36:45.049 [Gauge] [DEBUG] Plugin dotnet is already installed.
+25-12-2025 15:36:45.049 [Gauge] [DEBUG] Plugin screenshot is already installed.
+25-12-2025 15:36:45.049 [Gauge] [DEBUG] Parsing started.
+25-12-2025 15:36:45.049 [Gauge] [DEBUG] Started concepts parsing.
+25-12-2025 15:36:45.051 [Gauge] [DEBUG] 0 concepts parsing completed.
+25-12-2025 15:36:45.052 [Gauge] [DEBUG] Started specifications parsing.
+25-12-2025 15:36:45.053 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/Login.spec:1 Spec heading not found => ''
+25-12-2025 15:36:45.053 [Gauge] [WARNING] [ParseWarning] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:21 Multiple data table present, ignoring table
+25-12-2025 15:36:45.054 [Gauge] [DEBUG] 2 specifications parsing completed.
+25-12-2025 15:36:45.054 [Gauge] [DEBUG] Parsing completed.
+25-12-2025 15:36:45.687 [Gauge] [DEBUG] Checking updates...
+25-12-2025 15:36:45.688 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/dotnet?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:36:46.303 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:36:46.502 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/screenshot?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:36:48.395 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/page/LoginPage.cs(15,53): warning CS8601: Possible null reference assignment. [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:36:48.793 [dotnet] [DEBUG] Loading assembly from : /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin/BugBankTests.dll
+25-12-2025 15:36:49.680 [dotnet] [DEBUG] Try load Gauge.CSharp.Lib in GaugeLoadContext
+25-12-2025 15:36:49.700 [dotnet] [DEBUG] Try load BugBankTests in GaugeLoadContext
+25-12-2025 15:36:49.709 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:36:49.709 [dotnet] [DEBUG] Try load WebDriver in GaugeLoadContext
+25-12-2025 15:36:49.712 [dotnet] [DEBUG] Try load FluentAssertions in GaugeLoadContext
+25-12-2025 15:36:49.713 [dotnet] [DEBUG] Try load SeleniumExtras.WaitHelpers in GaugeLoadContext
+25-12-2025 15:36:49.714 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:36:49.716 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:36:49.718 [dotnet] [DEBUG] Number of AssembliesReferencingGaugeLib : 1
+25-12-2025 15:36:49.721 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:36:49.721 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:36:49.722 [dotnet] [DEBUG] Building StepRegistry...
+25-12-2025 15:36:49.725 [dotnet] [DEBUG] 3 Step implementations found. Adding to registry...
+25-12-2025 15:36:49.727 [dotnet] [DEBUG] 'Open Bugbank Homepage': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:36:49.729 [dotnet] [DEBUG] 'Click Register to sign up for new account': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:36:49.729 [dotnet] [DEBUG] 'Enter Email {}': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:36:49.729 [dotnet] [DEBUG] Building StepRegistry...
+25-12-2025 15:36:49.729 [dotnet] [DEBUG] 3 Step implementations found. Adding to registry...
+25-12-2025 15:36:49.729 [dotnet] [DEBUG] 'Open Bugbank Homepage': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:36:49.729 [dotnet] [DEBUG] 'Click Register to sign up for new account': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:36:49.730 [dotnet] [DEBUG] 'Enter Email {}': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:36:49.814 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60109
+25-12-2025 15:36:49.814 [Gauge] [DEBUG] Successfully made the connection with runner with port: 60109
+25-12-2025 15:36:49.814 [Gauge] [DEBUG] Validation started.
+25-12-2025 15:36:50.034 [Gauge] [DEBUG] Validation completed.
+25-12-2025 15:36:50.034 [Gauge] [DEBUG] Run started
+25-12-2025 15:36:50.035 [Gauge] [DEBUG] Initialising suite data store.
+25-12-2025 15:36:50.044 [dotnet] [DEBUG] Try load System.Collections.Concurrent in GaugeLoadContext
+25-12-2025 15:36:50.071 [dotnet] [DEBUG] Loaded Instance Manager of Type: Gauge.CSharp.Lib.DefaultClassInstanceManager
+25-12-2025 15:36:50.188 [dotnet] [DEBUG] Calling InvokeMethod to call method Void Setup()
+25-12-2025 15:36:50.189 [dotnet] [DEBUG] Try load System.Threading in GaugeLoadContext
+25-12-2025 15:36:50.191 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:36:50.191 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:36:50.191 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:36:50.195 [dotnet] [DEBUG] Try load System.Net.Sockets in GaugeLoadContext
+25-12-2025 15:36:50.195 [dotnet] [DEBUG] Try load System.Net.Primitives in GaugeLoadContext
+25-12-2025 15:36:50.204 [dotnet] [DEBUG] Try load System.Threading in GaugeLoadContext
+25-12-2025 15:36:50.204 [dotnet] [DEBUG] Try load System.Console in GaugeLoadContext
+25-12-2025 15:36:50.205 [dotnet] [DEBUG] Try load System.Collections.Concurrent in GaugeLoadContext
+25-12-2025 15:36:50.208 [dotnet] [DEBUG] Try load System.Diagnostics.Process in GaugeLoadContext
+25-12-2025 15:36:50.208 [dotnet] [DEBUG] Try load System.Text.Json in GaugeLoadContext
+25-12-2025 15:36:50.210 [dotnet] [DEBUG] Try load System.Linq in GaugeLoadContext
+25-12-2025 15:36:50.772 [dotnet] [DEBUG] Try load System.Text.Encodings.Web in GaugeLoadContext
+25-12-2025 15:36:50.789 [dotnet] [DEBUG] Try load System.Net.Http in GaugeLoadContext
+25-12-2025 15:36:53.500 [Gauge] [INFO] # BugBank Sign Up
+25-12-2025 15:36:53.543 [Gauge] [INFO] ## Sign up for BugBank
+25-12-2025 15:36:53.565 [Gauge] [DEBUG] * Open Bugbank Homepage
+25-12-2025 15:36:53.615 [dotnet] [DEBUG] Calling InvokeMethod to call method Void OpenBugBank()
+25-12-2025 15:36:53.617 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:36:55.018 [dotnet] [DEBUG] Try load System.Threading.Thread in GaugeLoadContext
+25-12-2025 15:36:56.586 [dotnet] [DEBUG] Try load System.Threading in GaugeLoadContext
+25-12-2025 15:36:56.586 [dotnet] [DEBUG] Try load System.Console in GaugeLoadContext
+25-12-2025 15:36:56.586 [dotnet] [DEBUG] Try load System.Diagnostics.TraceSource in GaugeLoadContext
+25-12-2025 15:36:56.588 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:36:56.590 [dotnet] [DEBUG] Try load System.Collections.Concurrent in GaugeLoadContext
+25-12-2025 15:36:56.592 [dotnet] [DEBUG] Try load System.Xml.XDocument in GaugeLoadContext
+25-12-2025 15:36:56.594 [dotnet] [DEBUG] Try load System.Linq in GaugeLoadContext
+25-12-2025 15:36:56.598 [dotnet] [INFO] Warning:
+25-12-2025 15:36:56.598 [dotnet] [INFO] The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and
+25-12-2025 15:36:56.598 [dotnet] [INFO] the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for
+25-12-2025 15:36:56.598 [dotnet] [INFO] non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.
+25-12-2025 15:36:56.598 [dotnet] [INFO] Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.
+25-12-2025 15:36:56.599 [dotnet] [INFO] A paid commercial license supports the development and continued increasing support of
+25-12-2025 15:36:56.599 [dotnet] [INFO] Fluent Assertions users under both commercial and community licenses. Help us
+25-12-2025 15:36:56.599 [dotnet] [INFO] keep Fluent Assertions at the forefront of unit testing.
+25-12-2025 15:36:56.599 [dotnet] [INFO] For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/
+25-12-2025 15:36:56.623 [Gauge] [DEBUG] * Click Register to sign up for new account
+
+25-12-2025 15:36:56.628 [dotnet] [DEBUG] Calling InvokeMethod to call method Void Register()
+25-12-2025 15:36:56.628 [dotnet] [DEBUG] Try load netstandard in GaugeLoadContext
+25-12-2025 15:36:56.844 [dotnet] [DEBUG] Calling InvokeMethod to call method Void TearDown()
+25-12-2025 15:36:56.995 [dotnet] [DEBUG] Try load System.ComponentModel.Primitives in GaugeLoadContext
+25-12-2025 15:36:57.081 [dotnet] [DEBUG] KillProcessrequest received
+25-12-2025 15:36:57.082 [Gauge] [INFO] Specifications:	2 executed	1 passed	1 failed	0 skipped
+25-12-2025 15:36:57.082 [Gauge] [INFO] Scenarios:	1 executed	1 passed	0 failed	0 skipped
+25-12-2025 15:36:57.082 [Gauge] [INFO] 
+Total time taken: 7.041s
+25-12-2025 15:36:57.083 [Gauge] [INFO] Updates are available. Run `gauge update -c` for more info.
+25-12-2025 15:40:42.714 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+25-12-2025 15:40:42.716 [Gauge] [DEBUG] Plugin dotnet is already installed.
+25-12-2025 15:40:42.717 [Gauge] [DEBUG] Plugin screenshot is already installed.
+25-12-2025 15:40:42.718 [Gauge] [DEBUG] Parsing started.
+25-12-2025 15:40:42.718 [Gauge] [DEBUG] Started concepts parsing.
+25-12-2025 15:40:42.722 [Gauge] [DEBUG] 0 concepts parsing completed.
+25-12-2025 15:40:42.723 [Gauge] [DEBUG] Started specifications parsing.
+25-12-2025 15:40:42.725 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/Login.spec:1 Spec heading not found => ''
+25-12-2025 15:40:42.725 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:12 Dynamic parameter <email> could not be resolved => 'Enter Email <email>'
+25-12-2025 15:40:42.725 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:13 Dynamic parameter <name> could not be resolved => 'Enter Name <name>'
+25-12-2025 15:40:42.725 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:14 Dynamic parameter <password> could not be resolved => 'Enter Password <password>'
+25-12-2025 15:40:42.725 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:15 Dynamic parameter <password> could not be resolved => 'Confirm Password <password>'
+25-12-2025 15:40:42.725 [Gauge] [DEBUG] 2 specifications parsing completed.
+25-12-2025 15:40:42.725 [Gauge] [DEBUG] Parsing completed.
+25-12-2025 15:40:43.631 [Gauge] [DEBUG] Checking updates...
+25-12-2025 15:40:43.633 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/dotnet?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:40:44.398 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:40:44.580 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/screenshot?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:40:47.020 [dotnet] [DEBUG] Loading assembly from : /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin/BugBankTests.dll
+25-12-2025 15:40:47.358 [dotnet] [DEBUG] Try load Gauge.CSharp.Lib in GaugeLoadContext
+25-12-2025 15:40:47.376 [dotnet] [DEBUG] Try load BugBankTests in GaugeLoadContext
+25-12-2025 15:40:47.376 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:40:47.377 [dotnet] [DEBUG] Try load WebDriver in GaugeLoadContext
+25-12-2025 15:40:47.379 [dotnet] [DEBUG] Try load FluentAssertions in GaugeLoadContext
+25-12-2025 15:40:47.380 [dotnet] [DEBUG] Try load SeleniumExtras.WaitHelpers in GaugeLoadContext
+25-12-2025 15:40:47.380 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:40:47.382 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:40:47.384 [dotnet] [DEBUG] Number of AssembliesReferencingGaugeLib : 1
+25-12-2025 15:40:47.386 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:40:47.386 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:40:47.387 [dotnet] [DEBUG] Building StepRegistry...
+25-12-2025 15:40:47.390 [dotnet] [DEBUG] 3 Step implementations found. Adding to registry...
+25-12-2025 15:40:47.392 [dotnet] [DEBUG] 'Open Bugbank Homepage': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:40:47.394 [dotnet] [DEBUG] 'Click Register to sign up for new account': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:40:47.394 [dotnet] [DEBUG] 'Enter Email {}': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:40:47.394 [dotnet] [DEBUG] Building StepRegistry...
+25-12-2025 15:40:47.394 [dotnet] [DEBUG] 3 Step implementations found. Adding to registry...
+25-12-2025 15:40:47.394 [dotnet] [DEBUG] 'Open Bugbank Homepage': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:40:47.394 [dotnet] [DEBUG] 'Click Register to sign up for new account': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:40:47.394 [dotnet] [DEBUG] 'Enter Email {}': implementation found in StepRegistry, setting reflected methodInfo
+25-12-2025 15:40:47.472 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60138
+25-12-2025 15:40:47.472 [Gauge] [DEBUG] Successfully made the connection with runner with port: 60138
+25-12-2025 15:40:47.472 [Gauge] [DEBUG] Validation started.
+25-12-2025 15:40:47.676 [Gauge] [ERROR] [ValidationError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:13 Step implementation not found => 'Enter Name <name>'
+25-12-2025 15:40:47.677 [Gauge] [ERROR] [ValidationError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:14 Step implementation not found => 'Enter Password <password>'
+25-12-2025 15:40:47.677 [Gauge] [ERROR] [ValidationError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:15 Step implementation not found => 'Confirm Password <password>'
+25-12-2025 15:40:47.677 [Gauge] [ERROR] [ValidationError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:18 Step implementation not found => 'Click "Create acc with a balance"'
+25-12-2025 15:40:47.677 [Gauge] [ERROR] [ValidationError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:19 Step implementation not found => 'Click Register button <table>'
+25-12-2025 15:40:47.677 [Gauge] [INFO] Add the following missing implementations to fix `Step implementation not found` errors.
+25-12-2025 15:40:47.677 [Gauge] [INFO] 		[Step("Enter Name <name>")]
+		public void EnterName(arg0)
+		{
+			throw new NotImplementedException();
+		}
+25-12-2025 15:40:47.677 [Gauge] [INFO] 		[Step("Enter Password <password>")]
+		public void EnterPassword(arg0)
+		{
+			throw new NotImplementedException();
+		}
+25-12-2025 15:40:47.677 [Gauge] [INFO] 		[Step("Confirm Password <password>")]
+		public void ConfirmPassword(arg0)
+		{
+			throw new NotImplementedException();
+		}
+25-12-2025 15:40:47.677 [Gauge] [INFO] 		[Step("Click <Create acc with a balance>")]
+		public void Click(arg0)
+		{
+			throw new NotImplementedException();
+		}
+25-12-2025 15:40:47.677 [Gauge] [INFO] 		[Step("Click Register button <table>")]
+		public void ClickRegisterButton(arg0)
+		{
+			throw new NotImplementedException();
+		}
+25-12-2025 15:40:47.677 [Gauge] [DEBUG] Run started
+25-12-2025 15:40:47.680 [Gauge] [DEBUG] Initialising suite data store.
+25-12-2025 15:40:47.698 [dotnet] [DEBUG] Try load System.Collections.Concurrent in GaugeLoadContext
+25-12-2025 15:40:47.715 [dotnet] [DEBUG] Loaded Instance Manager of Type: Gauge.CSharp.Lib.DefaultClassInstanceManager
+25-12-2025 15:40:47.798 [dotnet] [DEBUG] Calling InvokeMethod to call method Void Setup()
+25-12-2025 15:40:47.799 [dotnet] [DEBUG] Try load System.Threading in GaugeLoadContext
+25-12-2025 15:40:47.801 [dotnet] [DEBUG] Try load System.Runtime in GaugeLoadContext
+25-12-2025 15:40:47.801 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:40:47.801 [dotnet] [DEBUG] Try load System.Collections in GaugeLoadContext
+25-12-2025 15:40:47.806 [dotnet] [DEBUG] Try load System.Net.Sockets in GaugeLoadContext
+25-12-2025 15:40:47.806 [dotnet] [DEBUG] Try load System.Net.Primitives in GaugeLoadContext
+25-12-2025 15:40:47.815 [dotnet] [DEBUG] Try load System.Threading in GaugeLoadContext
+25-12-2025 15:40:47.816 [dotnet] [DEBUG] Try load System.Console in GaugeLoadContext
+25-12-2025 15:40:47.816 [dotnet] [DEBUG] Try load System.Collections.Concurrent in GaugeLoadContext
+25-12-2025 15:40:47.819 [dotnet] [DEBUG] Try load System.Diagnostics.Process in GaugeLoadContext
+25-12-2025 15:40:47.819 [dotnet] [DEBUG] Try load System.Text.Json in GaugeLoadContext
+25-12-2025 15:40:47.821 [dotnet] [DEBUG] Try load System.Linq in GaugeLoadContext
+25-12-2025 15:40:48.308 [dotnet] [DEBUG] Try load System.Text.Encodings.Web in GaugeLoadContext
+25-12-2025 15:40:48.324 [dotnet] [DEBUG] Try load System.Net.Http in GaugeLoadContext
+25-12-2025 15:40:51.645 [dotnet] [DEBUG] Calling InvokeMethod to call method Void TearDown()
+25-12-2025 15:40:51.765 [dotnet] [DEBUG] Try load System.ComponentModel.Primitives in GaugeLoadContext
+25-12-2025 15:40:51.820 [dotnet] [DEBUG] KillProcessrequest received
+25-12-2025 15:40:51.822 [Gauge] [INFO] Specifications:	2 executed	0 passed	2 failed	0 skipped
+25-12-2025 15:40:51.822 [Gauge] [INFO] Scenarios:	0 executed	0 passed	0 failed	0 skipped
+25-12-2025 15:40:51.822 [Gauge] [INFO] 
+Total time taken: 4.14s
+25-12-2025 15:40:51.823 [Gauge] [INFO] Updates are available. Run `gauge update -c` for more info.
+25-12-2025 15:42:58.698 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+25-12-2025 15:42:58.700 [Gauge] [DEBUG] Plugin dotnet is already installed.
+25-12-2025 15:42:58.700 [Gauge] [DEBUG] Plugin screenshot is already installed.
+25-12-2025 15:42:58.701 [Gauge] [DEBUG] Parsing started.
+25-12-2025 15:42:58.701 [Gauge] [DEBUG] Started concepts parsing.
+25-12-2025 15:42:58.702 [Gauge] [DEBUG] 0 concepts parsing completed.
+25-12-2025 15:42:58.703 [Gauge] [DEBUG] Started specifications parsing.
+25-12-2025 15:42:58.704 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/Login.spec:1 Spec heading not found => ''
+25-12-2025 15:42:58.704 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:12 Dynamic parameter <email> could not be resolved => 'Enter Email <email>'
+25-12-2025 15:42:58.704 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:13 Dynamic parameter <name> could not be resolved => 'Enter Name <name>'
+25-12-2025 15:42:58.704 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:14 Dynamic parameter <password> could not be resolved => 'Enter Password <password>'
+25-12-2025 15:42:58.704 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:15 Dynamic parameter <password> could not be resolved => 'Confirm Password <password>'
+25-12-2025 15:42:58.704 [Gauge] [DEBUG] 2 specifications parsing completed.
+25-12-2025 15:42:58.704 [Gauge] [DEBUG] Parsing completed.
+25-12-2025 15:42:59.741 [Gauge] [DEBUG] Checking updates...
+25-12-2025 15:42:59.744 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/dotnet?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:43:00.328 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:43:00.534 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/screenshot?l=dotnet&p=dotnet,html-report,screenshot&o=darwin&a=amd64
+25-12-2025 15:43:02.124 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/steps/SignUpSteps.cs(32,24): error CS1955: Non-invocable member 'LoginPage.EnterName' cannot be used like a method. [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:43:02.124 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/steps/SignUpSteps.cs(38,24): error CS1955: Non-invocable member 'LoginPage.EnterPassword' cannot be used like a method. [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:43:02.124 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/steps/SignUpSteps.cs(44,24): error CS1955: Non-invocable member 'LoginPage.ConfirmPassword' cannot be used like a method. [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:43:02.124 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/steps/SignUpSteps.cs(50,24): error CS1061: 'LoginPage' does not contain a definition for 'ClickCreateAccountWithBalance' and no accessible extension method 'ClickCreateAccountWithBalance' accepting a first argument of type 'LoginPage' could be found (are you missing a using directive or an assembly reference?) [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:43:02.124 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/page/LoginPage.cs(15,53): warning CS8601: Possible null reference assignment. [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:43:02.266 [dotnet] [INFO] { "logLevel": "fatal", "message": "Unable to build Project in /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests\ndotnet Project build failed.
+25-12-2025 15:43:02.266 [dotnet] [INFO] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'\n   at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59"}
+25-12-2025 15:43:02.268 [dotnet] [ERROR] Unhandled exception.
+25-12-2025 15:43:02.272 [dotnet] [ERROR] System.Exception: dotnet Project build failed.
+25-12-2025 15:43:02.272 [dotnet] [ERROR] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'
+25-12-2025 15:43:02.272 [dotnet] [ERROR] at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59
+25-12-2025 15:43:02.272 [dotnet] [ERROR] at Gauge.Dotnet.Program.Main(String[] args) in /home/runner/work/gauge-dotnet/gauge-dotnet/src/Program.cs:line 47
+25-12-2025 15:43:02.272 [dotnet] [ERROR] at Gauge.Dotnet.Program.<Main>(String[] args)
+25-12-2025 15:43:02.431 [dotnet] [ERROR] launcher.sh: line 5: 19716 Abort trap: 6           dotnet bin/net9.0/Gauge.Dotnet.dll $@
+25-12-2025 15:43:02.432 [Gauge] [ERROR] Error occurred while waiting for runner process to finish.
+Error : exit status 134
+25-12-2025 15:43:02.432 [Gauge] [CRITICAL] Failed to start gauge API: Error occurred while waiting for runner process to finish.
+Error : exit status 134

@@ -8,15 +8,15 @@ This plan tests the user journey to sign up on the BugBank website
 * Open Bugbank Homepage
 * Click Register to sign up for new account
 
-// ### Fill the registration form
-// * Enter Email <email>
-// * Enter Name <name>
-// * Enter Password <password>
-// * Confirm Password <password>
+### Fill the registration form
+* Enter Email <email>
+* Enter Name <name>
+* Enter Password <password>
+* Confirm Password <password>
 
-// ### Submit the form
-// * Click "Create acc with a balance"
-// * Click Register button
+### Submit the form
+* Click "Create acc with a balance"
+* Click Register button
 
 | email                 | name      | password |
 | user1@example.com     | Jane Doe  | 12345    |
