@@ -20,6 +20,10 @@ namespace Steps
             _loginPage.ClickRegisterButton();
         }
     
-        [Step("Enter Email antomhandu@gmail.com")]
+        [Step("Enter Email <email>")]
+        public void EnterEmail(string email)
+        {
+            _loginPage.EnterEmail(email);
+        }
     }
 }

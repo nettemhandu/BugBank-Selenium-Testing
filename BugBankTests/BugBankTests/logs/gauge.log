@@ -1113,3 +1113,76 @@ Total time taken: 8.304s
 25-12-2025 15:05:33.607 [Gauge] [INFO] 
 Total time taken: 8.988s
 25-12-2025 15:05:33.608 [Gauge] [INFO] Updates are available. Run `gauge update -c` for more info.
+25-12-2025 15:13:41.560 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+25-12-2025 15:13:41.562 [Gauge] [DEBUG] Plugin dotnet is already installed.
+25-12-2025 15:13:41.564 [Gauge] [DEBUG] Plugin screenshot is already installed.
+25-12-2025 15:13:41.564 [Gauge] [DEBUG] Parsing started.
+25-12-2025 15:13:41.564 [Gauge] [DEBUG] Started concepts parsing.
+25-12-2025 15:13:41.569 [Gauge] [DEBUG] 0 concepts parsing completed.
+25-12-2025 15:13:41.569 [Gauge] [DEBUG] Started specifications parsing.
+25-12-2025 15:13:41.571 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/Login.spec:1 Spec heading not found => ''
+25-12-2025 15:13:41.571 [Gauge] [DEBUG] 2 specifications parsing completed.
+25-12-2025 15:13:41.571 [Gauge] [DEBUG] Parsing completed.
+25-12-2025 15:13:45.069 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/steps/SignUpSteps.cs(24,32): error CS0246: The type or namespace name 'IWebDriver' could not be found (are you missing a using directive or an assembly reference?) [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:13:45.279 [dotnet] [INFO] { "logLevel": "fatal", "message": "Unable to build Project in /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests\ndotnet Project build failed.
+25-12-2025 15:13:45.280 [dotnet] [INFO] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'\n   at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59"}
+25-12-2025 15:13:45.282 [dotnet] [ERROR] Unhandled exception.
+25-12-2025 15:13:45.290 [dotnet] [ERROR] System.Exception: dotnet Project build failed.
+25-12-2025 15:13:45.290 [dotnet] [ERROR] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'
+25-12-2025 15:13:45.290 [dotnet] [ERROR] at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59
+25-12-2025 15:13:45.290 [dotnet] [ERROR] at Gauge.Dotnet.Program.Main(String[] args) in /home/runner/work/gauge-dotnet/gauge-dotnet/src/Program.cs:line 47
+25-12-2025 15:13:45.290 [dotnet] [ERROR] at Gauge.Dotnet.Program.<Main>(String[] args)
+25-12-2025 15:13:45.410 [dotnet] [ERROR] launcher.sh: line 5: 18323 Abort trap: 6           dotnet bin/net9.0/Gauge.Dotnet.dll $@
+25-12-2025 15:13:45.410 [Gauge] [ERROR] Error occurred while waiting for runner process to finish.
+Error : exit status 134
+25-12-2025 15:13:45.410 [Gauge] [CRITICAL] Failed to start gauge API: Error occurred while waiting for runner process to finish.
+Error : exit status 134
+25-12-2025 15:16:48.849 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+25-12-2025 15:16:48.851 [Gauge] [DEBUG] Plugin dotnet is already installed.
+25-12-2025 15:16:48.853 [Gauge] [DEBUG] Plugin screenshot is already installed.
+25-12-2025 15:16:48.854 [Gauge] [DEBUG] Parsing started.
+25-12-2025 15:16:48.854 [Gauge] [DEBUG] Started concepts parsing.
+25-12-2025 15:16:48.859 [Gauge] [DEBUG] 0 concepts parsing completed.
+25-12-2025 15:16:48.860 [Gauge] [DEBUG] Started specifications parsing.
+25-12-2025 15:16:48.861 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/Login.spec:1 Spec heading not found => ''
+25-12-2025 15:16:48.861 [Gauge] [DEBUG] 2 specifications parsing completed.
+25-12-2025 15:16:48.861 [Gauge] [DEBUG] Parsing completed.
+25-12-2025 15:16:53.492 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/page/LoginPage.cs(74,21): error CS0102: The type 'LoginPage' already contains a definition for 'EnterEmail' [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:16:53.636 [dotnet] [INFO] { "logLevel": "fatal", "message": "Unable to build Project in /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests\ndotnet Project build failed.
+25-12-2025 15:16:53.636 [dotnet] [INFO] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'\n   at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59"}
+25-12-2025 15:16:53.637 [dotnet] [ERROR] Unhandled exception.
+25-12-2025 15:16:53.644 [dotnet] [ERROR] System.Exception: dotnet Project build failed.
+25-12-2025 15:16:53.645 [dotnet] [ERROR] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'
+25-12-2025 15:16:53.645 [dotnet] [ERROR] at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59
+25-12-2025 15:16:53.645 [dotnet] [ERROR] at Gauge.Dotnet.Program.Main(String[] args) in /home/runner/work/gauge-dotnet/gauge-dotnet/src/Program.cs:line 47
+25-12-2025 15:16:53.646 [dotnet] [ERROR] at Gauge.Dotnet.Program.<Main>(String[] args)
+25-12-2025 15:16:53.785 [dotnet] [ERROR] launcher.sh: line 5: 18449 Abort trap: 6           dotnet bin/net9.0/Gauge.Dotnet.dll $@
+25-12-2025 15:16:53.785 [Gauge] [ERROR] Error occurred while waiting for runner process to finish.
+Error : exit status 134
+25-12-2025 15:16:53.785 [Gauge] [CRITICAL] Failed to start gauge API: Error occurred while waiting for runner process to finish.
+Error : exit status 134
+25-12-2025 15:17:16.678 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/.gauge/screenshots
+25-12-2025 15:17:16.681 [Gauge] [DEBUG] Plugin dotnet is already installed.
+25-12-2025 15:17:16.682 [Gauge] [DEBUG] Plugin screenshot is already installed.
+25-12-2025 15:17:16.682 [Gauge] [DEBUG] Parsing started.
+25-12-2025 15:17:16.682 [Gauge] [DEBUG] Started concepts parsing.
+25-12-2025 15:17:16.684 [Gauge] [DEBUG] 0 concepts parsing completed.
+25-12-2025 15:17:16.685 [Gauge] [DEBUG] Started specifications parsing.
+25-12-2025 15:17:16.686 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/Login.spec:1 Spec heading not found => ''
+25-12-2025 15:17:16.686 [Gauge] [ERROR] [ParseError] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/specs/SignUp.spec:9 Dynamic parameter <antomhandu@gmail.com> could not be resolved => 'Enter Email <antomhandu@gmail.com>'
+25-12-2025 15:17:16.686 [Gauge] [DEBUG] 2 specifications parsing completed.
+25-12-2025 15:17:16.686 [Gauge] [DEBUG] Parsing completed.
+25-12-2025 15:17:20.221 [dotnet] [INFO] /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/Scenarios/page/LoginPage.cs(74,21): error CS0102: The type 'LoginPage' already contains a definition for 'EnterEmail' [/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/BugBankTests.csproj]
+25-12-2025 15:17:20.351 [dotnet] [INFO] { "logLevel": "fatal", "message": "Unable to build Project in /Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests\ndotnet Project build failed.
+25-12-2025 15:17:20.352 [dotnet] [INFO] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'\n   at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59"}
+25-12-2025 15:17:20.353 [dotnet] [ERROR] Unhandled exception.
+25-12-2025 15:17:20.356 [dotnet] [ERROR] System.Exception: dotnet Project build failed.
+25-12-2025 15:17:20.356 [dotnet] [ERROR] Ran 'dotnet publish --runtime=osx-x64 --no-self-contained --configuration=release --output="/Users/Antonette/Desktop/side-quests/BugBank-Selenium-Testing/BugBankTests/BugBankTests/gauge_bin"  "BugBankTests.csproj" --verbosity=quiet'
+25-12-2025 15:17:20.356 [dotnet] [ERROR] at Gauge.Dotnet.GaugeProjectBuilder.BuildTargetGaugeProject() in /home/runner/work/gauge-dotnet/gauge-dotnet/src/GaugeProjectBuilder.cs:line 59
+25-12-2025 15:17:20.356 [dotnet] [ERROR] at Gauge.Dotnet.Program.Main(String[] args) in /home/runner/work/gauge-dotnet/gauge-dotnet/src/Program.cs:line 47
+25-12-2025 15:17:20.356 [dotnet] [ERROR] at Gauge.Dotnet.Program.<Main>(String[] args)
+25-12-2025 15:17:20.467 [dotnet] [ERROR] launcher.sh: line 5: 18479 Abort trap: 6           dotnet bin/net9.0/Gauge.Dotnet.dll $@
+25-12-2025 15:17:20.468 [Gauge] [ERROR] Error occurred while waiting for runner process to finish.
+Error : exit status 134
+25-12-2025 15:17:20.468 [Gauge] [CRITICAL] Failed to start gauge API: Error occurred while waiting for runner process to finish.
+Error : exit status 134

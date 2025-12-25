@@ -70,5 +70,12 @@ namespace Pages
 
             RegisterButton.Click();
         }
+
+        public void EnterEmail(string email)
+        {
+            var emailField = Driver.FindElement(By.Name("email"));
+            emailField.Clear();
+            emailField.SendKeys(email);
+        }
     }
 }
