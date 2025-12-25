@@ -14,8 +14,8 @@ namespace Pages
         private const string Url = "https://bugbank.netlify.app/?utm_source=chatgpt.com";
         private static readonly IWebDriver Driver = DriverFactory.Driver;
 
-        private static IWebElement EnterEmail =>
-        Driver.FindElement(By.Name("email"));
+        // private static IWebElement EnterEmail =>
+        // Driver.FindElement(By.Name("email"));
         private static IWebElement EnterPassword =>
         Driver.FindElement(By.Name("password"));
 
