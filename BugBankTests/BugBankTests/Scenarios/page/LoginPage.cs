@@ -34,12 +34,16 @@ namespace Pages
         private static IWebElement CreateAccWithBalance =>
         Driver.FindElement(By.Id("toggleAddBalance"));
 
-        public LoginPage Open()
+        public void Open()
         {
-            Driver.Navigate().GoToUrl(Url);
-            Driver.Title.Should().Be("BugBank | The bank with bugs and glitches, your way.");
-            return this;
+            Driver!.Navigate().GoToUrl("https://bugbank.netlify.app/");
+            WebDriverWait wait = new WebDriverWait(Driver!, TimeSpan.FromSeconds(10));
+            wait.Until(d => d.Title.Contains("The bank with bugs and glitches"));
+
+            // Now title assertion
+            Driver!.Title.Should().Be("BugBank | The bank with bugs and glitches, your way.");
         }
+
 
         public void ClickAccessButton()
         {

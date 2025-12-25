@@ -466,3 +466,8 @@ content/.vscode/tasks.json
 /.gauge/
 /gauge_bin/
 /.vscode/
+
+# Gauge
+.gauge/
+gauge_bin/
+reports/
