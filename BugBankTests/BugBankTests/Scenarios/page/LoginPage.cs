@@ -37,7 +37,7 @@ namespace Pages
         private static IWebElement SubmitRegisterButton =>
             Driver.FindElement(By.XPath("//form//button[normalize-space()='Register']"));
 
-        /* ========= Actions ========= */
+        // Actions
 
         public void Open()
         {
@@ -98,7 +98,7 @@ namespace Pages
             SubmitRegisterButton.Click();
         }
 
-        /* ========= Helper ========= */
+        // Helper
 
         private static void WaitUntilClickable(IWebElement element)
         {
