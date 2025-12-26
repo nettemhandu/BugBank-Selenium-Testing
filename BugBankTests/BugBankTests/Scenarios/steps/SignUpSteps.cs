@@ -1,4 +1,3 @@
-// using Gauge.Csharp.Lib;
 using Gauge.CSharp.Lib.Attribute;
 using Pages;
 
@@ -9,23 +8,51 @@ namespace Steps
         private readonly LoginPage _loginPage = new LoginPage();
 
         [Step("Open Bugbank Homepage")]
-        public void OpenBugBank()
+        public void OpenBugbankHomepage()
         {
             _loginPage.Open();
         }
 
         [Step("Click Register to sign up for new account")]
-        public void Register()
+        public void ClickRegister()
         {
             _loginPage.ClickRegisterButton();
         }
-    
+
         [Step("Enter Email <email>")]
         public void EnterEmail(string email)
         {
             _loginPage.EnterEmail(email);
         }
 
-        
+        [Step("Enter Name <name>")]
+        public void EnterName(string name)
+        {
+            _loginPage.EnterName(name);
+        }
+
+        [Step("Enter Password <password>")]
+        public void EnterPassword(string password)
+        {
+            _loginPage.EnterPassword(password);
+        }
+
+        [Step("Confirm Password <password>")]
+        public void ConfirmPassword(string password)
+        {
+            _loginPage.ConfirmPassword(password);
+        }
+
+        [Step("Click Create account with balance")]
+        public void ClickCreateAccountWithBalance()
+        {
+            _loginPage.ClickCreateAccountWithBalance();
+        }
+
+        [Step("Click Register button")]
+        public void ClickFinalRegisterButton()
+        {
+            _loginPage.SubmitRegistration();
+        }
     }
 }
