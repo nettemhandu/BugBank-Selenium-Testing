@@ -10,101 +10,83 @@ namespace Pages
     public class LoginPage
     {
         private const string Url = "https://bugbank.netlify.app/";
-        private static readonly IWebDriver Driver = DriverFactory.Driver;
+        private static readonly IWebDriver Driver = DriverFactory.Driver!;
 
-        // Locators
+        // Login form elements
+        private static IWebElement EmailField => Driver.FindElement(By.Name("email"));
+        private static IWebElement PasswordField => Driver.FindElement(By.Name("password"));
+        private static IWebElement AccessButton => Driver.FindElement(By.XPath("//button[normalize-space()='Access']"));
+        private static IWebElement RegisterButton => Driver.FindElement(By.XPath("//button[normalize-space()='Register']"));
 
-        private static IWebElement EmailInput =>
-            Driver.FindElement(By.Name("email"));
-
-        private static IWebElement PasswordInput =>
-            Driver.FindElement(By.Name("password"));
-
-        private static IWebElement NameInput =>
-            Driver.FindElement(By.Name("name"));
-
-        private static IWebElement ConfirmPasswordInput =>
-            Driver.FindElement(By.Name("passwordConfirmation"));
-
-        private static IWebElement AccessButton =>
-            Driver.FindElement(By.XPath("//button[normalize-space()='Access']"));
-
-        private static IWebElement OpenRegisterButton =>
-            Driver.FindElement(By.XPath("//button[contains(text(),'Register')]"));
-
-        private static IWebElement CreateAccountWithBalanceToggle =>
-            Driver.FindElement(By.Id("toggleAddBalance"));
-
-        private static IWebElement SubmitRegisterButton =>
-            Driver.FindElement(By.XPath("//form//button[normalize-space()='Register']"));
-
-        // Actions
+        // Sign up form elements
+        private static IWebElement NameField => Driver.FindElement(By.Name("name"));
+        private static IWebElement ConfirmPasswordField => Driver.FindElement(By.Name("passwordConfirmation"));
+        private static IWebElement CreateAccWithBalance => Driver.FindElement(By.Id("toggleAddBalance"));
+        private static IWebElement SignUpButton => Driver.FindElement(By.XPath("//button[normalize-space()='Cadastrar']"));
 
         public void Open()
         {
             Driver.Navigate().GoToUrl(Url);
 
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(15));
+
+            // Wait until the page title contains "BugBank"
             wait.Until(d => d.Title.Contains("BugBank"));
 
-            Driver.Title.Should()
-                .Be("BugBank | The bank with bugs and glitches, your way.");
+            // Ensure the title matches English
+            Driver.Title.Should().Be("BugBank | The bank with bugs and glitches, your way.");
+        }
+
+        public void EnterEmail(string email)
+        {
+            EmailField.Clear();
+            EmailField.SendKeys(email);
+        }
+
+        public void EnterPassword(string password)
+        {
+            PasswordField.Clear();
+            PasswordField.SendKeys(password);
+        }
+
+        public void EnterName(string name)
+        {
+            NameField.Clear();
+            NameField.SendKeys(name);
+        }
+
+        public void ConfirmPassword(string password)
+        {
+            ConfirmPasswordField.Clear();
+            ConfirmPasswordField.SendKeys(password);
         }
 
         public void ClickAccessButton()
         {
-            WaitUntilClickable(AccessButton);
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementToBeClickable(AccessButton));
             AccessButton.Click();
         }
 
         public void ClickRegisterButton()
         {
-            WaitUntilClickable(OpenRegisterButton);
-            OpenRegisterButton.Click();
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementToBeClickable(RegisterButton));
+            RegisterButton.Click();
         }
 
-        public void EnterEmail(string email)
-        {
-            EmailInput.Clear();
-            EmailInput.SendKeys(email);
-        }
-
-        public void EnterName(string name)
-        {
-            NameInput.Clear();
-            NameInput.SendKeys(name);
-        }
-
-        public void EnterPassword(string password)
-        {
-            PasswordInput.Clear();
-            PasswordInput.SendKeys(password);
-        }
-
-        public void ConfirmPassword(string password)
-        {
-            ConfirmPasswordInput.Clear();
-            ConfirmPasswordInput.SendKeys(password);
-        }
-
-        public void ClickCreateAccountWithBalance()
-        {
-            WaitUntilClickable(CreateAccountWithBalanceToggle);
-            CreateAccountWithBalanceToggle.Click();
-        }
-
-        public void SubmitRegistration()
-        {
-            WaitUntilClickable(SubmitRegisterButton);
-            SubmitRegisterButton.Click();
-        }
-
-        // Helper
-
-        private static void WaitUntilClickable(IWebElement element)
+        public void ClickCreateAccWithBalance()
         {
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(element));
+            wait.Until(ExpectedConditions.ElementToBeClickable(CreateAccWithBalance));
+            CreateAccWithBalance.Click();
+        }
+
+        public void ClickSignUpButton()
+        {
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementToBeClickable(SignUpButton));
+            SignUpButton.Click();
         }
     }
 }

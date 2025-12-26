@@ -7,7 +7,7 @@ namespace Steps
     {
         private readonly LoginPage _loginPage = new LoginPage();
 
-        [Step("Open Bugbank Homepage")]
+        [Step("Open BugBank Homepage")]
         public void OpenBugbankHomepage()
         {
             _loginPage.Open();
@@ -43,16 +43,16 @@ namespace Steps
             _loginPage.ConfirmPassword(password);
         }
 
-        [Step("Click Create account with balance")]
+        [Step("Click Create Account with Balance")]
         public void ClickCreateAccountWithBalance()
         {
-            _loginPage.ClickCreateAccountWithBalance();
+            _loginPage.ClickCreateAccWithBalance();
         }
 
-        [Step("Click Register button")]
-        public void ClickFinalRegisterButton()
+        [Step("Click Sign Up")]
+        public void ClickSignUp()
         {
-            _loginPage.SubmitRegistration();
+            _loginPage.ClickSignUpButton();
         }
     }
 }
