@@ -34,7 +34,7 @@ namespace Pages
             wait.Until(d => d.Title.Contains("BugBank"));
 
             // Ensure the title matches English
-            Driver.Title.Should().Be("BugBank | The bank with bugs and glitches, your way.");
+            Driver.Title.Should().Be("BugBank | O banco com bugs e falhas do seu jeito");
         }
 
         public void EnterEmail(string email)
