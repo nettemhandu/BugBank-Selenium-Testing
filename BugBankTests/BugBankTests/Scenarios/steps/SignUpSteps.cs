@@ -52,7 +52,7 @@ namespace Steps
         [Step("Click Sign Up")]
         public void ClickSignUp()
         {
-            _loginPage.ClickRegisterButton();
+            _loginPage.ClickSignUp();
         }
     }
 }

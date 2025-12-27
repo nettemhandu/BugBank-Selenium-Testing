@@ -82,11 +82,22 @@ namespace Pages
             CreateAccWithBalance.Click();
         }
 
-        // public void ClickSignUpButton()
-        // {
-        //     WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
-        //     wait.Until(ExpectedConditions.ElementToBeClickable(SignUpButton));
-        //     SignUpButton.Click();
-        // }
+        public void ClickSignUp()
+        {
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(15));
+
+            var signUpButton = wait.Until(
+                SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(
+                    By.XPath("//button[normalize-space()='Registrar']")
+                )
+            );
+
+            // Scroll into view (VERY important for BugBank)
+            ((IJavaScriptExecutor)Driver)
+                .ExecuteScript("arguments[0].scrollIntoView({block: 'center'});", signUpButton);
+
+            signUpButton.Click();
+        }
+
     }
 }
