@@ -22,7 +22,7 @@ namespace Pages
         private static IWebElement NameField => Driver.FindElement(By.Name("name"));
         private static IWebElement ConfirmPasswordField => Driver.FindElement(By.Name("passwordConfirmation"));
         private static IWebElement CreateAccWithBalance => Driver.FindElement(By.Id("toggleAddBalance"));
-        private static IWebElement SignUpButton => Driver.FindElement(By.XPath("//button[normalize-space()='Cadastrar']"));
+        private static IWebElement SignUpButton => Driver.FindElement(By.XPath("//button[normalize-space()='Register']"));
 
         public void Open()
         {
@@ -82,11 +82,11 @@ namespace Pages
             CreateAccWithBalance.Click();
         }
 
-        public void ClickSignUpButton()
-        {
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(SignUpButton));
-            SignUpButton.Click();
-        }
+        // public void ClickSignUpButton()
+        // {
+        //     WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+        //     wait.Until(ExpectedConditions.ElementToBeClickable(SignUpButton));
+        //     SignUpButton.Click();
+        // }
     }
 }
