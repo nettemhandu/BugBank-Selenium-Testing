@@ -15,5 +15,5 @@ This plan tests the user journey to sign up on the BugBank website
 * Confirm Password "12345678"
 
 ### Submit the form
-// * Click Create Account with Balance
+* Click Create Account with Balance
 * Click Sign Up
