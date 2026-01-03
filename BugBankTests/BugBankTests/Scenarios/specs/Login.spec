@@ -1,10 +1,8 @@
-// # BugBank Login
+# Login Specification
 
-// This plan tests the user journey to login on the BugBank App
-
-// ## Login to BugBank App
-
-// * Open Bugbank Homepage
-// * Enter Email "antomhandu@gmail.com"
-// * Enter Password "19990909"
-// * Click Access button to login
+## Successful Login
+* Open BugBank Homepage
+* Enter Login Email "test@example.com"
+* Enter Login Password "password123"
+* Click Access Button
+* User should be logged in

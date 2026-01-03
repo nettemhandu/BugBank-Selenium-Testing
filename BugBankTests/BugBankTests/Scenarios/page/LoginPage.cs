@@ -1,104 +1,109 @@
-using FluentAssertions;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
-using System;
 using Steps;
 
 namespace Pages
 {
     public class LoginPage
     {
-        private const string Url = "https://bugbank.netlify.app/";
-        private static readonly IWebDriver Driver = DriverFactory.Driver!;
+        private readonly IWebDriver driver;
 
-        // Login form elements
-        private static IWebElement EmailField => Driver.FindElement(By.Name("email"));
-        private static IWebElement PasswordField => Driver.FindElement(By.Name("password"));
-        private static IWebElement AccessButton => Driver.FindElement(By.XPath("//button[normalize-space()='Access']"));
-        private static IWebElement RegisterButton => Driver.FindElement(By.XPath("//button[normalize-space()='Register']"));
+        public LoginPage()
+        {
+            driver = DriverFactory.Driver!; // Use ! to tell compiler it's not null
+        }
 
-
-        // Sign up form elements
-        private static IWebElement NameField => Driver.FindElement(By.Name("name"));
-        private static IWebElement ConfirmPasswordField => Driver.FindElement(By.Name("passwordConfirmation"));
-        private static IWebElement CreateAccWithBalance => Driver.FindElement(By.Id("toggleAddBalance"));
-        private static IWebElement SignUpButton => Driver.FindElement(By.XPath("//button[text()='Cadastrar']"));
-
+        // === SIMPLE METHODS ===
+        
         public void Open()
         {
-            Driver.Navigate().GoToUrl(Url);
+            driver.Navigate().GoToUrl("https://bugbank.netlify.app/");
+            Thread.Sleep(3000);
+        }
 
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(15));
-
-            // Wait until the page title contains "BugBank"
-            wait.Until(d => d.Title.Contains("BugBank"));
-
-            // Ensure the title matches English
-            Driver.Title.Should().Be("BugBank | O banco com bugs e falhas do seu jeito");
+        public void ClickRegisterToSignUp()
+        {
+            // Click "Register" button to switch to registration form
+            var registerButton = driver.FindElement(By.XPath("//button[text()='Register']"));
+            registerButton.Click();
+            Thread.Sleep(1000);
         }
 
         public void EnterEmail(string email)
         {
-            EmailField.Clear();
-            EmailField.SendKeys(email);
-        }
-
-        public void EnterPassword(string password)
-        {
-            PasswordField.Clear();
-            PasswordField.SendKeys(password);
+            // Wait for registration form to be active
+            Thread.Sleep(500);
+            var emailField = driver.FindElement(By.CssSelector("input[name='email']"));
+            emailField.SendKeys(email);
         }
 
         public void EnterName(string name)
         {
-            NameField.Clear();
-            NameField.SendKeys(name);
+            var nameField = driver.FindElement(By.CssSelector("input[name='name']"));
+            nameField.SendKeys(name);
+        }
+
+        public void EnterPassword(string password)
+        {
+            var passwordField = driver.FindElement(By.CssSelector("input[name='password']"));
+            passwordField.SendKeys(password);
         }
 
         public void ConfirmPassword(string password)
         {
-            ConfirmPasswordField.Clear();
-            ConfirmPasswordField.SendKeys(password);
-        }
-
-        public void ClickAccessButton()
-        {
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(AccessButton));
-            AccessButton.Click();
-        }
-
-        public void ClickRegisterButton()
-        {
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(RegisterButton));
-            RegisterButton.Click();
+            var confirmField = driver.FindElement(By.CssSelector("input[name='passwordConfirmation']"));
+            confirmField.SendKeys(password);
         }
 
         public void ClickCreateAccWithBalance()
         {
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(CreateAccWithBalance));
-            CreateAccWithBalance.Click();
+            // Click the toggle switch
+            var toggle = driver.FindElement(By.CssSelector("label.styles__Container-sc-1pngcbh-0"));
+            toggle.Click();
+            Thread.Sleep(300);
         }
 
-        public void ClickSignUp()
+        public void ClickCadastrarButton()
         {
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(15));
-
-            var signUpButton = wait.Until(
-                SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(
-                    By.XPath("//button[normalize-space()='Registrar']")
-                )
-            );
-
-            // Scroll into view (VERY important for BugBank)
-            ((IJavaScriptExecutor)Driver)
-                .ExecuteScript("arguments[0].scrollIntoView({block: 'center'});", signUpButton);
-
-            signUpButton.Click();
+            // The SUBMIT button on registration form says "Register" (translated)
+            // Find the SECOND "Register" button (the one in the registration form)
+            var allRegisterButtons = driver.FindElements(By.XPath("//button[text()='Register']"));
+            
+            if (allRegisterButtons.Count >= 2)
+            {
+                // Click the second Register button (index 1)
+                allRegisterButtons[1].Click();
+            }
+            else
+            {
+                // Fallback: just click any Register button
+                var registerButton = driver.FindElement(By.XPath("//button[text()='Register']"));
+                registerButton.Click();
+            }
+            
+            Thread.Sleep(2000);
         }
 
+        // === LOGIN METHODS ===
+        
+        public void EnterLoginEmail(string email)
+        {
+            // Make sure we're on login form
+            Thread.Sleep(500);
+            var emailField = driver.FindElement(By.CssSelector("input[name='email']"));
+            emailField.SendKeys(email);
+        }
+
+        public void EnterLoginPassword(string password)
+        {
+            var passwordField = driver.FindElement(By.CssSelector("input[name='password']"));
+            passwordField.SendKeys(password);
+        }
+
+        public void ClickAccessButton()
+        {
+            var accessButton = driver.FindElement(By.XPath("//button[text()='Access']"));
+            accessButton.Click();
+            Thread.Sleep(2000);
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace Steps
         [Step("Enter Email <email>")]
         public void EnterEmail(string email)
         {
-            _loginPage.EnterEmail(email);
+            _loginPage.EnterRegisterEmail(email);
         }
 
         [Step("Enter Name <name>")]
@@ -34,7 +34,7 @@ namespace Steps
         [Step("Enter Password <password>")]
         public void EnterPassword(string password)
         {
-            _loginPage.EnterPassword(password);
+            _loginPage.EnterRegisterPassword(password);
         }
 
         [Step("Confirm Password <password>")]
@@ -52,7 +52,7 @@ namespace Steps
         [Step("Click Sign Up")]
         public void ClickSignUp()
         {
-            _loginPage.ClickSignUp();
+            _loginPage.ClickCadastrarButton();
         }
     }
 }
