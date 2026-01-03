@@ -43,11 +43,11 @@ namespace Steps
             _loginPage.ConfirmPassword(password);
         }
 
-        // [Step("Click Create Account with Balance")]
-        // public void ClickCreateAccountWithBalance()
-        // {
-        //     _loginPage.ClickCreateAccWithBalance();
-        // }
+        [Step("Click Create Account with Balance")]
+        public void ClickCreateAccountWithBalance()
+        {
+            _loginPage.ClickCreateAccWithBalance();
+        }
 
         [Step("Click Sign Up")]
         public void ClickSignUp()

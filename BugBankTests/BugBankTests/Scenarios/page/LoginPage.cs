@@ -18,11 +18,12 @@ namespace Pages
         private static IWebElement AccessButton => Driver.FindElement(By.XPath("//button[normalize-space()='Access']"));
         private static IWebElement RegisterButton => Driver.FindElement(By.XPath("//button[normalize-space()='Register']"));
 
+
         // Sign up form elements
         private static IWebElement NameField => Driver.FindElement(By.Name("name"));
         private static IWebElement ConfirmPasswordField => Driver.FindElement(By.Name("passwordConfirmation"));
         private static IWebElement CreateAccWithBalance => Driver.FindElement(By.Id("toggleAddBalance"));
-        private static IWebElement SignUpButton => Driver.FindElement(By.XPath("//button[normalize-space()='Register']"));
+        private static IWebElement SignUpButton => Driver.FindElement(By.XPath("//button[text()='Cadastrar']"));
 
         public void Open()
         {
