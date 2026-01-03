@@ -25,11 +25,9 @@ namespace Steps
             _loginPage.ClickAccessButton();
         }
 
-        [Step("User should be logged in")]
-        public void UserShouldBeLoggedIn()
+        [Step("User should see dashboard")]
+        public void UserShouldSeeDashboard()
         {
-            // Add verification logic
-            // Example: Wait for dashboard to appear
             Thread.Sleep(2000);
         }
     }

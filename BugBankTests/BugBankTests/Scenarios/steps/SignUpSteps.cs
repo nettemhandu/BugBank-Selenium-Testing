@@ -14,15 +14,15 @@ namespace Steps
         }
 
         [Step("Click Register to sign up for new account")]
-        public void ClickRegister()
+        public void ClickRegisterToSignUp()
         {
-            _loginPage.ClickRegisterButton();
+            _loginPage.ClickRegisterToSignUp();
         }
 
         [Step("Enter Email <email>")]
         public void EnterEmail(string email)
         {
-            _loginPage.EnterRegisterEmail(email);
+            _loginPage.EnterEmail(email);
         }
 
         [Step("Enter Name <name>")]
@@ -34,7 +34,7 @@ namespace Steps
         [Step("Enter Password <password>")]
         public void EnterPassword(string password)
         {
-            _loginPage.EnterRegisterPassword(password);
+            _loginPage.EnterPassword(password);
         }
 
         [Step("Confirm Password <password>")]
@@ -49,10 +49,10 @@ namespace Steps
             _loginPage.ClickCreateAccWithBalance();
         }
 
-        [Step("Click Sign Up")]
-        public void ClickSignUp()
+        [Step("Click Register to create account")]
+        public void ClickRegisterToCreateAccount()
         {
-            _loginPage.ClickCadastrarButton();
+            _loginPage.ClickRegisterToCreateAccount();
         }
     }
 }

@@ -8,4 +8,4 @@
 * Enter Password "12345678"
 * Confirm Password "12345678"
 * Click Create Account with Balance
-* Click Register to create account  # CHANGED from "Click Sign Up"
+* Click Register to create account

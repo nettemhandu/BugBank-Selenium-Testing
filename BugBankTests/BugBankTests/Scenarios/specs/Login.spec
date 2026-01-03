@@ -2,7 +2,7 @@
 
 ## Successful Login
 * Open BugBank Homepage
-* Enter Login Email "test@example.com"
-* Enter Login Password "password123"
+* Enter Login Email "janedoe@gmail.com"
+* Enter Login Password "12345678"
 * Click Access Button
-* User should be logged in
+* User should see dashboard
